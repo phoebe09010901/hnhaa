@@ -17,6 +17,8 @@
 <meta name="keywords" content="<?=$keywords?>">
 <meta name="description" content="<?=$description?>" />
 <title><?=$html_title?></title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 <!-- 基本款 開始 -->
 <link rel="stylesheet" href="css/reset.css">
