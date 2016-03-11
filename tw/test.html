@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-tw">
+<head>
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="男丁格爾's 脫殼玩" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>用 jQuery 控制網頁捲軸移動(動畫式)</title>
+<style type="text/css">
+	.box_01 {
+		width:500px;
+		margin:0 auto;
+		height: 500px;
+		background:#6CF;
+	}
+	.box_02 {
+		width:500px;
+		margin:0 auto;
+		height: 500px;
+		background:#F9C;
+		background:#69C;
+	}
+	.box_03 {
+		width:500px;
+		margin:0 auto;
+		height: 500px;
+	}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 幫 a.abgne_gotoheader 加上 click 事件
+		$('a.title_01').click(function(){
+			$('box_01').animate({ //滑鼠進來
+				scrollTop: '10px'
+			});
+			return false;
+		});
+		$('a.title_02').click(function(){
+			$('box_02').animate({ //滑鼠進來
+				scrollTop: '510px'
+			});
+			return false;
+		});
+		$('a.title_03').click(function(){
+			$('box_03').animate({ //滑鼠進來
+				scrollTop: '1010px'
+			});
+			return false;
+		});
+	});
+</script>
+</head>
+
+<body>
+	<a href="#" class="title_01">title_01</a> | <a href="#" class="title_02">title_02</a> | <a href="#" class="title_03">title_03</a>
+	
+	<div class="box_01">box_01</div>
+	
+	<div class="box_02">box_02</div>
+	
+	<div class="box_02">box_02</div>
+</body>
+</html>

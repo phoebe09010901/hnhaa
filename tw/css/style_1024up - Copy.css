@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:'Microsoft JhengHei', 微軟正黑體,sans-serif;
+}
+.clear {
+  clear: both;
+} 
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.wapper_01 {
+	width:1340px;
+	margin: 0 auto;
+}
+header {
+	width:1340px;
+	height:119px;
+	position:relative;
+}
+header img {
+	width:100%;
+}
+
+section {
+	width:1340px;
+}
+
+
+/*----------------- header 上方logo＋menu -----------------*/
+.logo_01 {
+	width:205px;
+	height:29px;
+	margin-top:45px;
+	float:left;
+}
+.logo_02 {
+	width:207px;
+	height:28px;
+	margin-top:45px;
+	margin-left:36px;
+	float:left;
+}
+.language_01 {
+	width:64px;
+	text-align:right;
+	text-transform:uppercase;
+	float:right;
+	margin-top:48px;
+	font-size:12px;
+}
+
+.about_title {
+	float:right;
+	margin-top:45px;
+}
+
+.small_title_01 {
+	float:right;
+	margin-top:48px;
+	margin-right:44px;
+	font-size:12px;
+}
+.small_title_02 {
+	float:right;
+	margin-top:48px;
+	margin-right:15px;
+	font-size:12px;
+}
+.small_title_03 {
+	float:right;
+	margin-top:48px;
+	margin-right:15px;
+	font-size:12px;
+}
+
+.big_title_01 {
+	float:right;
+	margin-top:45px;
+	margin-right:15px;
+}
+
+
+.big_title_01 .action, .small_title_01 .action, .small_title_02 .action, .small_title_03 .action {
+	color:#231815;
+}
+
+.language_01 a, .about_title a, .big_title_01 a, .small_title_01 a, .small_title_02 a, .small_title_03 a {
+	text-decoration:none;
+	color:#4c4948;
+}
+.language_01 a:hover, .about_title a:hover, .big_title_01 a:hover, .small_title_01 a:hover, .small_title_02 a:hover, .small_title_03 a:hover {
+	text-decoration:none;
+	color:#231815;
+	/*font-size:15px;*/
+}
+
+
+
+/*----------------- index 首頁 -----------------*/
+.index_banner {
+	width:1340px;
+	height:650px;
+}
+.index_banner img {
+	width:100%;
+	height:100%;
+}
+
+
+
+/*----------------- pro 作品頁 -----------------*/
+.marginTop { margin-top:30px;}
+
+.proPic_first {
+	width:326px;
+	height:221px;
+	float:left;
+	margin-bottom:12px;
+	background:#e5e5e6;
+	position:relative;
+}
+.proPic {
+	width:326px;
+	height:221px;
+	float:left;
+	margin-left:12px;
+	margin-bottom:12px;
+	background:#e5e5e6;
+	position:relative;
+}
+.proPic_first .proPic_block, .proPic .proPic_block {
+	width:326px;
+	height:221px;
+	position:absolute;
+	z-index:1;
+}
+.proPic_first .proPic_title, .proPic .proPic_title {
+	width:326px;
+	height:221px;
+	position:absolute;
+	z-index:2;
+	background:url(../images/black_60.png) top left repeat;
+	text-align:center;
+	padding-top:103px;
+	filter:alpha(opacity=0); /*IE,透明度50%*/
+    -moz-opacity:0; /*Firefox,透明度50%*/
+    opacity:0;/*其他浏览器,透明度50%*/
+	font-size:15px;
+	top:-9999px;
+}
+.proPic_first .proPic_title a, .proPic .proPic_title a {
+	color:#FFF;
+	text-decoration:none;
+}
+.proPic_first .proPic_title a:hover, .proPic .proPic_title a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+
+.proPic_first .proPic_block img, .proPic .proPic_block img {
+	width:100%;
+	height:100%;
+}
+
+
+
+
+/*----------------- about 首頁 -----------------*/
+.about_banner {
+	width:1340px;
+	height:650px;
+	position:absolute;
+	z-index:1;
+}
+.about_banner img {
+	width:100%;
+	height:100%;
+}
+.address {
+	width:280px;
+	position:absolute;
+	z-index:2;
+	margin-left:17px;
+	margin-top:410px;
+}
+.address a, .address a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+/*----------------- 相片輪播 首頁 -----------------*/
+
+.banner_01 { background:#FFF; width:1420px; height:827px; opacity:1; position:absolute; z-index:50; top:119px; }
+
+.banner_block {
+	width:1420px;
+	height:827px;
+}
+
+	.banner_block .pre_01 { 
+		width:40px; 
+		height:65px; 
+		float:left;
+		margin-top:380px; 
+		background:url(../banner/big_left.png);
+		background-size:40px 65px;
+	}
+	.banner_block .pic_01 { 
+		width:1340px; 
+		height:827px;
+		float:left;
+		text-align:center;
+	}
+	.banner_block .pic_01 img {
+		height:100%;
+		max-width:1340px;
+	}
+	.banner_block .next_01 { 
+		width:40px; 
+		height:65px;
+		float:left;
+		margin-top:380px; 
+		background:url(../banner/big_right.png);
+		background-size:40px 65px;
+	}
+	.page_01 { 
+		width:30px; 
+		height:30px; 
+		float:right; 
+		text-align:right;
+		font-size:17px;
+	}
+	
+			.banner_02 { background:#FFF; width:1420px; height:827px; opacity:0; position:absolute; z-index:49; top:-11900px; }
+		
+		.banner_block {
+			width:1420px;
+			height:827px;
+		}
+		
+			.banner_block .pre_02 { 
+				width:40px; 
+				height:65px; 
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_left.png);
+				background-size:40px 65px;
+			}
+			.banner_block .pic_02 { 
+				width:1340px; 
+				height:827px;
+				float:left;
+				text-align:center;
+			}
+			img {
+				height:100%;
+				max-width:1340px;
+			}
+	.banner_block .next_02 { 
+				width:40px; 
+				height:65px;
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_right.png);
+				background-size:40px 65px;
+			}
+			.page_02 { 
+				width:30px; 
+				height:30px; 
+				float:right; 
+				text-align:right;
+				font-size:17px;
+			}
+			.banner_03 { background:#FFF; width:1420px; height:827px; opacity:0; position:absolute; z-index:48; top:-11900px; }
+		
+		.banner_block {
+			width:1420px;
+			height:827px;
+		}
+		
+			.banner_block .pre_03 { 
+				width:40px; 
+				height:65px; 
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_left.png);
+				background-size:40px 65px;
+			}
+			.banner_block .pic_03 { 
+				width:1340px; 
+				height:827px;
+				float:left;
+				text-align:center;
+			}
+			.banner_block .pic_03 img {
+		height:100%;
+		max-width:1340px;
+	}
+	.banner_block .next_03 { 
+				width:40px; 
+				height:65px;
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_right.png);
+				background-size:40px 65px;
+			}
+			.page_03 { 
+				width:30px; 
+				height:30px; 
+				float:right; 
+				text-align:right;
+				font-size:17px;
+			}
+			.banner_04 { background:#FFF; width:1420px; height:827px; opacity:0; position:absolute; z-index:47; top:-11900px; }
+		
+		.banner_block {
+			width:1420px;
+			height:827px;
+		}
+		
+			.banner_block .pre_04 { 
+				width:40px; 
+				height:65px; 
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_left.png);
+				background-size:40px 65px;
+			}
+			.banner_block .pic_04 { 
+				width:1340px; 
+				height:827px;
+				float:left;
+				text-align:center;
+			}
+			.banner_block .pic_04 img {
+		height:100%;
+		max-width:1340px;
+	}
+	.banner_block .next_04 { 
+				width:40px; 
+				height:65px;
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_right.png);
+				background-size:40px 65px;
+			}
+			.page_04 { 
+				width:30px; 
+				height:30px; 
+				float:right; 
+				text-align:right;
+				font-size:17px;
+			}
+			.banner_05 { background:#FFF; width:1420px; height:827px; opacity:0; position:absolute; z-index:46; top:-11900px; }
+		
+		.banner_block {
+			width:1420px;
+			height:827px;
+		}
+		
+			.banner_block .pre_05 { 
+				width:40px; 
+				height:65px; 
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_left.png);
+				background-size:40px 65px;
+			}
+			.banner_block .pic_05 { 
+				width:1340px; 
+				height:827px;
+				float:left;
+				text-align:center;
+			}
+			.banner_block .pic_05 img {
+		height:100%;
+		max-width:1340px;
+	}
+	.banner_block .next_05 { 
+				width:40px; 
+				height:65px;
+				float:left;
+				margin-top:380px; 
+				background:url(../banner/big_right.png);
+				background-size:40px 65px;
+			}
+			.page_05 { 
+				width:30px; 
+				height:30px; 
+				float:right; 
+				text-align:right;
+				font-size:17px;
+			}
+		
+.page_total { width:30px; height:30px; margin-right:36px; float:right; font-size:17px; }
+.case_info { width:1340px; margin-left:40px; position:absolute; z-index:3333; top:980px; font-size:14px; }
+.case_info_02 { width:100%; font-size:14px; }
+	.case_info .case_name { margin-right:5px; float:left; }
+	.case_info .case_place { margin-right:5px; float:left; }
+	.case_info .case_area { margin-right:0px; float:left; }
+	.case_info .case_totalArea { margin-left:50px; float:left; }
+	.case_info .case_periodDesign { margin-left:50px; float:left; }
+	.case_info .case_periodWork { margin-left:50px; float:left; }
+	.case_info .case_Line { width:30px; text-align:center; margin: 0 5px 0 0; float:left; }
+.sectionWidth { width:1420px; }

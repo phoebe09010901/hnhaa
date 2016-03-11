@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'MuseoSans';
+  src: url('../font/MuseoSans.eot');
+  src: url('../font/MuseoSans.eot?#iefix') format('embedded-opentype');
+  src: url('../font/MuseoSans-500.woff') format('woff'),
+       url('../font/MuseoSans-500.svg#MuseoSans-500') format('svg'),
+	   url('../font/MuseoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Gill Sans MT';
+  src: url('../font/Gill Sans MT.eot');
+  src: url('../font/Gill Sans MT.eot?#iefix') format('embedded-opentype');
+  src: url('../font/GillSansMT.woff') format('woff'),
+       url('../font/GillSansMT.svg#GillSansMT') format('svg'),
+	   url('../font/Gill Sans MT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
